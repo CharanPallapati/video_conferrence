@@ -29,5 +29,7 @@ io.on('connection', socket => {
     })
   })
 })
- 
- module.exports = app;
+server.listen(4000,()=>{
+  console.log("running")
+});
+module.exports=app;
