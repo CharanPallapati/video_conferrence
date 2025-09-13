@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{   
+          margin: 0;
+          padding: 0;
+        }
+        body{
+             background-image:url("images.png");
+              background-size: cover;
+                height: 100%;
+            width: 100%;
+        }
+        .body{
+            height:100vh;
+            place-items: center;
+              align-content: center;
+        }
+        input{
+            color: white;
+             background-color: black;
+            font-weight: bold;
+            height: 4.5vh;
+            width: 20vw;
+            border-radius:8px;
+            border:1px soild #f8f4f4cc;
+            text-align:center;
+             
+        }
+        input::placeholder{
+            color:rgb(255, 255, 255)
+        }
+        
+        .form{
+            color: white;
+            height:50vh;
+            width: 50vw;
+            border-radius: 20px;
+            place-items: center;
+            opacity: 0.65;
+            align-content: center;
+            background-color:black;
+        }
+        button{
+            color: rgb(255, 253, 253);
+            height: 35px;
+            width:80px;
+            border-radius: 10px;
+            background-color:rgb(127, 0, 129);
+            font-weight: bold;
+            border-color: transparent;
+        }
+       
+    </style>
+</head>
+<body>
+       <div class="body">
+    
+    <div class="form">
+        <h1>Create / Join meeting</h1>
+        <br>
+        <form action="/join-room" method="GET">
+            <input name="id" type="text" placeholder="enter a id to create or join a room" required />
+            <br><br>
+            <input name="user_name" type="text" placeholder="Enter your name" required>
+            <br><br>
+            <div class="button">
+            <button type="submit">Join</button>
+            </div>
+        </form>
+    </div>
+     </div>
+</body>
+</html>
